@@ -48,20 +48,25 @@ void FillMatrixWithRandomNumbers(int Matrix[3][3], short rows, short columns) {
 
 bool IsIdentityMatrix(int Matrix[3][3], short rows, short columns) {
 
+    //Check if diagonal elements are 1 and rest are 0
+
     for (short i = 0; i < rows;i++) {
 
         for (short j = 0; j < columns; j++) {
 
+            //check for diagonal elements
             if (i == j && Matrix[i][j] != 1) {
 
                 return false;
 
             }
+            //check for rest elements
             else if(i != j && Matrix[i][j] != 0) {
 
                 return false;
 
             }
+            
 
         }
 
@@ -70,7 +75,6 @@ bool IsIdentityMatrix(int Matrix[3][3], short rows, short columns) {
 
     return true;
     
-
 }
 
 
