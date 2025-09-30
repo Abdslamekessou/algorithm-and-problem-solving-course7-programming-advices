@@ -33,9 +33,9 @@ int RandomNumber(int From, int To) {
 void FillMatrixWithRandomNumbers(int Matrix[3][3], short rows, short columns) {
 
 
-    for (int i = 0; i < rows;i++) {
+    for (short i = 0; i < rows;i++) {
 
-        for (int j = 0; j < columns; j++) {
+        for (short j = 0; j < columns; j++) {
 
             Matrix[i][j] = RandomNumber(1, 10);
 
@@ -48,9 +48,9 @@ void FillMatrixWithRandomNumbers(int Matrix[3][3], short rows, short columns) {
 
 bool IsIdentityMatrix(int Matrix[3][3], short rows, short columns) {
 
-    for (int i = 0; i < rows;i++) {
+    for (short i = 0; i < rows;i++) {
 
-        for (int j = 0; j < columns; j++) {
+        for (short j = 0; j < columns; j++) {
 
             if (i == j && Matrix[i][j] != 1) {
 
@@ -77,9 +77,9 @@ bool IsIdentityMatrix(int Matrix[3][3], short rows, short columns) {
 
 void PrintMatrix(int Matrix[3][3], short rows, short columns) {
 
-    for (int i = 0; i < rows;i++) {
+    for (short i = 0; i < rows;i++) {
 
-        for (int j = 0; j < columns; j++) {
+        for (short j = 0; j < columns; j++) {
 
             printf("%0*d    ", 2, Matrix[i][j]);
 
