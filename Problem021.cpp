@@ -6,7 +6,7 @@ using namespace std;
 // 🖨️ Print sequence: 1 1 2 3 5 8 13 21 34 55 for FibonacciSeries(10)
 
 
-void FibonacciSeries(short number) {
+void PrintFibonacciUsingForLoop(short number) {
 
     int prev1 = 1 , prev2 = 0 , FebNumber = 0;
 
@@ -29,7 +29,7 @@ void FibonacciSeries(short number) {
 
 int main()
 {
-    FibonacciSeries(10);
+    PrintFibonacciUsingForLoop(10);
 }
 
 
