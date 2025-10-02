@@ -35,7 +35,7 @@ char ReadChar() {
 
 
 
-int CountLetterInString(string S1 , char Letter) {
+short CountLetterInString(string S1 , char Letter) {
 
     short counter = 0;
 
