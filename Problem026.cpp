@@ -33,9 +33,6 @@ string ReadString() {
 
 string UpperAllString(string S1) {
 
-    bool isFirstLetter = true;
-
-
     for (short i = 0; i < S1.length(); i++) {
 
         S1[i] = toupper(S1[i]);
@@ -49,9 +46,6 @@ string UpperAllString(string S1) {
 
 
 string LowerAllString(string S1) {
-
-    bool isFirstLetter = true;
-
 
     for (short i = 0; i < S1.length(); i++) {
 
