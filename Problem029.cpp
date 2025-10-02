@@ -95,12 +95,14 @@ int main()
 {
     string S1 = ReadString();
 
+    cout << "\nMethod 1 : \n";
     cout << "\n\nString Length        = " << CountLetters(S1) << endl;
     cout << "Capital Letter Count = " << CountLetters(S1 , enWhatToCount::CapitalLetters) << endl;
     cout << "Small Letter Count   = " << CountLetters(S1 , enWhatToCount::SmallLetters) << endl;
 
     cout << "\n*****************************************************************************************\n";
-
+    
+    cout << "\nMethod 2 : \n";
     cout <<"\n\nString Length        = " << S1.length() << endl;
     cout <<"Capital Letter Count = " << CountCapitalLetters(S1) << endl;
     cout <<"Small Letter Count   = " << CountSmallLetters(S1) << endl;
