@@ -29,7 +29,7 @@ enum enWhatToCount {CapitalLetters = 1 , SmallLetters = 2 , All = 3 };
 
 
 
-int CountLetters(string S1, enWhatToCount WhatToCount = enWhatToCount::All) {
+short CountLetters(string S1, enWhatToCount WhatToCount = enWhatToCount::All) {
     
     if (WhatToCount == enWhatToCount::All) {
         return S1.length();
@@ -55,9 +55,9 @@ int CountLetters(string S1, enWhatToCount WhatToCount = enWhatToCount::All) {
 
 
 
-int CountCapitalLetters(string S1) {
+short CountCapitalLetters(string S1) {
 
-    int counter = 0;
+    short counter = 0;
 
     for (short i = 0; i < S1.length(); i++) {
 
@@ -73,9 +73,9 @@ int CountCapitalLetters(string S1) {
 
 
 
-int CountSmallLetters(string S1) {
+short CountSmallLetters(string S1) {
 
-    int counter = 0;
+    short counter = 0;
 
     for (short i = 0; i < S1.length(); i++) {
 
