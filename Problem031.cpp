@@ -47,7 +47,7 @@ char InvertLetterCase(char char1) {
 
 
 
-int CountLetter(string S1 , char Letter , bool MatchCase = true) {
+short CountLetter(string S1 , char Letter , bool MatchCase = true) {
 
     short counter = 0;
 
