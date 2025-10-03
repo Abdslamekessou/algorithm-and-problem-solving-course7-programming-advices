@@ -39,7 +39,7 @@ void PrintEachWordInString(string S1) {
 
         sWord = S1.substr(0, pos);
 
-        if (sWord != " ") {
+        if (sWord != "") {
             cout << sWord << endl;
         }
 
@@ -47,7 +47,7 @@ void PrintEachWordInString(string S1) {
     }
 
 
-    if (S1 != " ") {
+    if (S1 != "") {
         cout << S1 << endl;
     }
 
