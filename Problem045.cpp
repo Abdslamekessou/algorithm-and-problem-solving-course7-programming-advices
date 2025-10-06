@@ -20,7 +20,7 @@ struct stClient {
     string PinCode;
     string Name;
     string Phone;
-    float AccountBalance;
+    double AccountBalance;
 
 };
 
