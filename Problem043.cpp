@@ -80,8 +80,6 @@ string ReplaceWordInStringUsingSplit(string S1 , string StringToReplace , string
     vector <string> vString;
     vString = SplitString(S1 , " ");
 
-    string S2 = "";
-
     for (string& s : vString) {
         
         if (s == StringToReplace && MatchCase) {
@@ -90,8 +88,6 @@ string ReplaceWordInStringUsingSplit(string S1 , string StringToReplace , string
         else if (LowerAllString(s) == LowerAllString(StringToReplace) && !MatchCase) {
             s = sReplaceTo;
         }
-
-        
 
     }
 
