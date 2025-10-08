@@ -198,7 +198,7 @@ void SaveClientsToVector(string FileName, vector <stClient> vClients) {
 
 void PrintClientRecord(stClient Client) {
 
-    cout << "\n\nThe following is extracted client record :" << endl;
+    cout << "\n\nThe following is client record data :" << endl;
     cout << "\nAccount Number   :  " << Client.AccountNumber << endl;
     cout << "Pin Code         :  " << Client.PinCode << endl;
     cout << "Name             :  " << Client.Name << endl;
