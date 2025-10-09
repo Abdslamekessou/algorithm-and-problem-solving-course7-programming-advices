@@ -39,7 +39,7 @@
 
 using namespace std;
 
-const string ClientsFileName = "C:\\Programming Advices\\Course7 C++\\Problem47\\Problem47\\Clients.txt";
+const string ClientsFileName = "Clients.txt";
 
 
 struct stClient {
