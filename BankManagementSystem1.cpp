@@ -269,7 +269,7 @@ void PrintClientCard(sClient Client)
 
 bool FindClientByAccountNumber(string AccountNumber, vector <sClient> vClients, sClient& Client)
 {
-    for (sClient C : vClients)
+    for (sClient &C : vClients)
     {
 
         if (C.AccountNumber == AccountNumber)
