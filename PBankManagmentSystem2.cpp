@@ -238,7 +238,7 @@ void ShowAllClientsScreen()
     }
     else {
 
-        for (sClient Client : vClients)
+        for (sClient &Client : vClients)
         {
 
             PrintClientRecordLine(Client);
@@ -266,7 +266,7 @@ void PrintClientCard(sClient Client)
 
 bool FindClientByAccountNumber(string AccountNumber, vector <sClient> vClients, sClient& Client)
 {
-    for (sClient C : vClients)
+    for (sClient &C : vClients)
     {
 
         if (C.AccountNumber == AccountNumber)
@@ -304,7 +304,7 @@ sClient ChangeClientRecord(string AccountNumber)
 bool MarkClientForDeleteByAccountNumber(string AccountNumber, vector <sClient>& vClients)
 {
 
-    for (sClient& C : vClients)
+    for (sClient &C : vClients)
     {
 
         if (C.AccountNumber == AccountNumber)
@@ -711,7 +711,7 @@ void ShowTotalBalances() {
     }
     else {
 
-        for (sClient Client : vClients)
+        for (sClient &Client : vClients)
         {
             
             PrintClientRecordBalanceLine(Client);
