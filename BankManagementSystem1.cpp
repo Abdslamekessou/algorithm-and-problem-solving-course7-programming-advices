@@ -239,7 +239,7 @@ void ShowAllClientsScreen()
     }
     else {
 
-        for (sClient Client : vClients)
+        for (sClient &Client : vClients)
         {
 
             PrintClientRecordLine(Client);
